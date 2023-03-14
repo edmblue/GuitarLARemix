@@ -20,6 +20,10 @@
 - Edit and delete products quantity
 - Mantain the information if reloading
 
+### 📑 End note 
+
+This was really special to built, I really enjoyed seeing a functional website created by me, I understood the concepts of REMIX and I had a lot of fun doing it 
+
 
 
                                                                                                                        

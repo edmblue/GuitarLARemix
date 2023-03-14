@@ -1,0 +1,77 @@
+.products-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.product-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  max-width: 65rem;
+}
+
+@media (min-width: 992px) {
+  .product-item {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+.product-item h2 {
+  text-transform: uppercase;
+  color: var(--primary);
+}
+
+.product-item .description {
+  font-size: 1.5rem;
+}
+
+.product-item .price {
+  font-weight: 900;
+  color: var(--primary);
+  font-size: 2.5rem;
+}
+
+.products-grid .product-item .description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+}
+
+/** form **/
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.formulario p {
+  margin: 0px;
+}
+
+.formulario select {
+  padding: 0.8rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.formulario button {
+  padding: 1.4rem;
+  cursor: pointer;
+}

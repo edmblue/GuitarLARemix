@@ -1,0 +1,28 @@
+.contenido-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .contenido-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.contenido-grid .content h2 {
+  color: var(--primary);
+  font-size: 3rem;
+}
+
+.contenido-grid .content {
+  color: #fff;
+  padding: 2rem 3rem;
+  font-size: 1.4rem;
+}
+
+@media (min-width: 768px) {
+  .contenido-grid .content {
+    grid-column: 2/3;
+  }
+}

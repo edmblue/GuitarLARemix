@@ -1,0 +1,90 @@
+.grid-carrito {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .grid-carrito {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-container {
+    padding: 0 10rem;
+  }
+}
+
+.resumen {
+  background: #eee;
+  padding: 2rem;
+  position: sticky;
+  top: 2rem;
+}
+
+.precio {
+  font-weight: 900;
+}
+
+/** Guitarra Articulo **/
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-bottom: 1px solid rgb(214, 221, 114);
+  padding: 2rem 0;
+}
+
+div.product-grid:last-of-type {
+  border-bottom: 0;
+}
+
+.img-container {
+  width: 10rem;
+}
+
+.name {
+  font-weight: 900;
+  font-size: 4rem;
+  margin: 0;
+}
+
+.select-guitarra {
+  width: 100%;
+  text-align: center;
+  padding: 0.4rem 0;
+  margin: 0.8rem 0 0 0;
+  border-radius: 1rem;
+}
+
+.price {
+  color: var(--primary);
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 0.5rem 0;
+}
+
+.subtotal span {
+  font-weight: 900;
+}
+
+/** Boton eliminar **/
+
+.btn-eliminar {
+  width: 100%;
+  text-transform: uppercase;
+  background: tomato;
+  font-weight: 700;
+  outline: none;
+  border: #fafbfd;
+  border-radius: 0.3rem;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  transition-property: background;
+  transition-duration: 300ms;
+}
+
+.btn-eliminar:hover {
+  background: var(--primary);
+}

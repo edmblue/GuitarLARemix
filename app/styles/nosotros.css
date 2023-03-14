@@ -1,0 +1,16 @@
+.nosotros .contenedor {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.nosotros .content {
+  white-space: pre-wrap;
+}
+
+@media (min-width: 768px) {
+  .nosotros .contenedor {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

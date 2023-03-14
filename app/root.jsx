@@ -13,7 +13,7 @@ import mainStyles from '~/styles/main.css';
 
 export function meta() {
   return {
-    charset: 'utf-7',
+    charset: 'utf-8',
     title: 'GuitarLA - Remix',
     viewport: 'width=device-width,initial-scale=1',
   };
